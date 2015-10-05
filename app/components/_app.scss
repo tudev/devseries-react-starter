@@ -1,0 +1,53 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fefefe;
+
+  header {
+    display: flex;
+    order: 1;
+    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: #03a9f4;
+
+    & > .hamburger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    & > .title {
+      text-align: left;
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+
+  main {
+    order: 2;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+  }
+}
